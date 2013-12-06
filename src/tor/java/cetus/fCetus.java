@@ -13,8 +13,11 @@ import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import tor.java.cetus.data.ceDocument;
+import tor.java.cetus.data.ceRefBook;
 import tor.java.cetus.tm.tmOperation;
 import JCommonTools.*;
+import JCommonTools.RefBook.RefBook;
+import JCommonTools.RefBook.fRefBook;
 
 public class fCetus extends JFrame 
 {
@@ -256,7 +259,15 @@ public class fCetus extends JFrame
 		@Override
 		public void actionPerformed(ActionEvent e) 
 		{
-			
+			fRefBook rb = new fRefBook(new ceRefBook(_cts));
+			rb.setIconImage(_cts.getImageIcon("Web.png").getImage());
+			rb.ActLoad.putValue(Action.SMALL_ICON, _cts.getImageIcon("Folder.png"));
+			rb.ActSave.putValue(Action.SMALL_ICON, _cts.getImageIcon("Save.png"));
+			rb.ActNew.putValue(Action.SMALL_ICON, _cts.getImageIcon("Plus.png"));
+			rb.ActEdit.putValue(Action.SMALL_ICON, _cts.getImageIcon("Edit.png"));
+			rb.ActDelete.putValue(Action.SMALL_ICON, _cts.getImageIcon("Minus.png"));
+			rb.setPreferencePath( Cetus.PREFERENCE_PATH+"/refbook");
+			rb.setVisible(true);
 		}
 	};
 	
