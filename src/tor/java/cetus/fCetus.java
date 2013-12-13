@@ -266,6 +266,7 @@ public class fCetus extends JFrame
 			rb.ActNew.putValue(Action.SMALL_ICON, _cts.getImageIcon("Plus.png"));
 			rb.ActEdit.putValue(Action.SMALL_ICON, _cts.getImageIcon("Edit.png"));
 			rb.ActDelete.putValue(Action.SMALL_ICON, _cts.getImageIcon("Minus.png"));
+			rb.ActRefresh.putValue(Action.SMALL_ICON, _cts.getImageIcon("Redo.png"));
 			rb.setPreferencePath( Cetus.PREFERENCE_PATH+"/refbook");
 			rb.setVisible(true);
 		}
