@@ -10,7 +10,7 @@ import java.util.Date;
  */
 public class ceOperation 
 {
-	private long _id;
+	private long _code;
 	private Date _date;
 	private float _value;
 	private int _currency;
@@ -27,13 +27,13 @@ public class ceOperation
 
 
 	public long get_id() {
-		return _id;
+		return _code;
 	}
 
 
 
 	public void set_id(long _id) {
-		this._id = _id;
+		this._code = _id;
 	}
 
 

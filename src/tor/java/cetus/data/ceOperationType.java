@@ -2,7 +2,7 @@ package tor.java.cetus.data;
 
 public class ceOperationType 
 {
+	private int	_code;
 	private String _name;
-	private int [] _arrDb;
-	private int [] _arrCr;
+	private ceDbCr [] _arrDbCr;
 }
